@@ -1,0 +1,94 @@
+<html>
+    
+     <?php
+ //database configuration file
+include 'config_bookstores.php';
+$result3 = mysqli_query($conn,'SELECT * FROM data_author ');
+
+    // $(document).ready(function(){ 
+  //$('#the_table').dataTable({ 
+    //'bProcessing':true, 
+    //'bServerSide':true, 
+   // 'sAjaxSource':'get_data.php' 
+ // }).fnSetFilteringDelay(); 
+//});
+    ?>
+	<head>
+            <title>
+                aaaa
+            </title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!--style--->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="media/css/jquery-ui.css">
+ <link rel="stylesheet" type="text/css" href="media/css/dataTables.jqueryui.css">
+<link rel="stylesheet" type="text/css" href="media/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="media/css/TableTools.css">
+<!--script---->
+<script type="text/javascript"  src="media/js/jquery.js"></script>
+<script type="text/javascript"  src="media/js/jquery.dataTables.js"></script>
+<script type="text/javascript"  src="media/js/TableTools.js"></script>
+<script type="text/javascript" charset="utf-8" src="media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf-8" src="media/ZeroClipboard/ZeroClipboard.js"></script>
+<script>
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'T<"clear">lfrtip',
+         "sPaginationType":"full_numbers",
+        "scrollCollapse": true,
+        "jQueryUI":true,
+    
+            "language": {
+            "lengthMenu": "عرض _MENU_ السجلات لكل صفحة",
+            "zeroRecords": "عفوا لا توجد بيانات للعرض",
+            "info": "عرض الصفحة _PAGE_ من _PAGES_",
+            "infoEmpty": "لا توجد سجلات متاحة",
+            "infoFiltered": "(تصفية من  _MAX_ اجمالي السجلات)",
+            "search":"بحث",
+             "oPaginate": {
+            "sPrevious": "السابق",
+            "sNext": "التالي",
+            "sFirst":"الاول",
+            "sLast":"الاخير"           }
+            
+        },
+          "aoColumnDefs": [{
+      'bSortable': false,
+      'aTargets': [0]
+  }]
+        } );
+        jQuery('#example_wrapper .dataTables_filter input')
+.addClass("input-medium"); // modify table search input
+jQuery('#example_wrapper .dataTables_length select')
+.addClass("input-mini"); // modify table per page dropdown
+} );
+    </script>
+        </head>
+         <body id="dt_example">
+		
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+	<thead>
+		<tr>
+			<th align="center">الاسم</th>
+			<th align="center">رقم الهوية</th>
+			<th align="center">رقم المنسوب</th>
+		</tr>
+	</thead>
+	<tbody>
+       <?PHP
+        while($row13= mysqli_fetch_assoc($result3)) {
+            
+		echo"<tr>";
+    echo "<td>$row13[Author_Name]</td>";
+    echo "<td>$row13[AuthorID]</td>";
+    echo"<td>$row13[university_ID]</td>";
+   	
+	echo"</tr>";	
+       
+        }
+        ?>
+	</tbody>
+</table>
+	</body>
+</html>   
+   

@@ -1,0 +1,94 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.7.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 27, 2014 at 03:59 PM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `bookstores`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `data_author`
+--
+
+CREATE TABLE IF NOT EXISTS `data_author` (
+  `AuthorID` int(11) NOT NULL DEFAULT '0',
+  `university_ID` int(100) NOT NULL,
+  `Author_Name` varchar(255) DEFAULT NULL,
+  `sexa` varchar(50) DEFAULT NULL,
+  `job_typea` varchar(150) DEFAULT NULL,
+  `faculty` varchar(150) DEFAULT NULL,
+  `departement` varchar(150) DEFAULT NULL,
+  `nation` varchar(150) DEFAULT NULL,
+  `marital_status` varchar(50) DEFAULT NULL,
+  `gen_specification` varchar(150) DEFAULT NULL,
+  `micro_specification` varchar(150) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `tele` varchar(150) DEFAULT NULL,
+  `mobile` varchar(150) DEFAULT NULL,
+  `mail` varchar(255) DEFAULT NULL,
+  `regdate` varchar(50) DEFAULT NULL,
+  `edit1` int(11) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `data_author`
+--
+
+INSERT INTO `data_author` (`AuthorID`, `university_ID`, `Author_Name`, `sexa`, `job_typea`, `faculty`, `departement`, `nation`, `marital_status`, `gen_specification`, `micro_specification`, `address`, `tele`, `mobile`, `mail`, `regdate`, `edit1`) VALUES
+(5566, 22330, 'عمرو عز الدين راشد', '1', 'استاذ', '1', 'علم النفس', 'مصري', 'اعزب', 'العلاج الطبيعي', '  تفسير وعلوم القرآن', '                                يييييييييييييي                                                                                                                                ', '222233', '33333', 'aa@hhh.com', '2014/10/12:11:05:34am', 1),
+(887766, 778844, 'fffffffffffffffff', '0', '', '0', 'اختر القسم', '0', '0', '', '0', '                 ', '', '', '', '2014/10/24:12:58:10pm', 0),
+(92176558, 2147483647, 'بببببببببببب', '0', '', '0', 'اختر القسم', '0', '0', '', '0', '                 ', '', '', '', '2014/10/24:01:17:34pm', 0),
+(999, 888, 'داليا', '2', 'استاذة مشاركة', '2', '', 'مصري', 'متزوج', 'aaaaaaa', 'bbbbbbbb', '                                                                                xxxxxxxxxxx                                                                                ', '66666666666', '88888888888', 'aa@hhhh.com', '2014/10/12:11:10:06am', 1),
+(4982, 5279, 'fffgggggggggg', '', '', '', 'اختر القسم', '0', '0', '', '0', '                                                 ', '', '', '', '2014/10/26:06:54:54pm', 1),
+(8899, 12346, 'محمد محمود محمد', '2', 'محاضرة', '16', 'الشريعة والدراسات الاسلامية', 'سويدي', 'متزوج', 'الاعاقة البصرية', '  السنة وعلومها', '                   بلبلبللبلببللللللللللللللللل                              ', '222222222', '3333333333', 'aa@hhh.com', '', 0),
+(99932, 8883, 'داليا', '2', 'استاذة مشاركة', '2', '', 'مصري', 'متزوج', 'aaaaaaa', 'bbbbbbbb', '                                                                xxxxxxxxxxx                                                                ', '66666666666', '88888888888', 'aa@hhhh.com', '', 0),
+(799923, 55, 'محمد', '1', 'محاضر', '', '', '', 'اعزب', '', '', '                                ', '', '', '', '', 0),
+(1999, 888, 'داليا', '2', 'استاذة مشاركة', '2', '', 'مصري', 'متزوج', 'aaaaaaa', 'bbbbbbbb', '                                                                xxxxxxxxxxx                                                                ', '66666666666', '88888888888', 'aa@hhhh.com', '', 0),
+(17999, 55, 'محمد', '1', 'محاضر', '', '', '', 'اعزب', '', '', '                                ', '', '', '', '', 0),
+(19993, 888, 'داليا', '2', 'استاذة مشاركة', '2', '', 'مصري', 'متزوج', 'aaaaaaa', 'bbbbbbbb', '                                                                                xxxxxxxxxxx                                                                                ', '66666666666', '88888888888', 'aa@hhhh.com', '2014/10/12:11:10:28am', 1),
+(179993, 55, 'محمد', '1', 'محاضر', '', '', '', 'اعزب', '', '', '                                ', '', '', '', '', 0),
+(22333, 333366, '4444', '', '', '0', '', '0', '0', 'المختبرات الطبية', '  عام', '                                                 ', '', '', '', '', 0),
+(111, 222, 'wwwww', '0', '', '0', '', '0', '0', '', '0', '                 ', '', '', '', '', 0),
+(222, 5555555, 'rrr', '0', '', '0', '', '0', '0', '', '0', '                 ', '', '', '', '', 0),
+(4444444, 222, 'eeeeeeeee', '0', '', '0', '', '0', '0', '', '0', '                 ', '', '', '', '', 0),
+(3333, 4444, 'ششششش', '2', 'محاضرة', '5', 'العقاقير', 'قطري', 'متزوج', '', '0', '                                                 ', '', '', '', '2014/10/12:11:11:08am', 1),
+(2147483647, 2147483647, 'tttttttttt', '0', '', '0', '', '0', '0', '', '0', '                 ', '', '', '', '', 0),
+(33333, 11111111, 'wwwwww', '1', 'محاضر', '5', 'الصيدلة السريرية', 'لبناني', 'اعزب', 'المناهج وطرق التدريس', '  السنة وعلومها', '                     wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww                            ', '222222222222', '333333333333', 'aaaaa@hhhhhhhhh.com', '', 0),
+(777777777, 2147483647, 'ccccccccc', '1', 'معيد', '2', 'اللغة العربية', 'مصري', '0', '', '0', '                                                 ', '', '', '', '2014/10/12:11:04:47am', 1),
+(8888, 666666, 'gggggggggg', '0', '', '0', 'اختر القسم', '0', '0', '', '0', '                 ', '', '', '', '2014/10/24:12:54:36pm', 0),
+(335656, 99889, 'ddddddddd', '1', 'محاضر', '17', 'القراءات', 'ايطالي', 'اعزب', 'الأنظمة', '  التفسير', '                 ffffffffffffffffffffffffffffffffffffffffffffffffffffffff', '4444444444', '5555555555', 'aa@tttttt.com', '2014/10/12:08:49:13am', 0),
+(6666666, 99998, 'ssssssss', '1', 'محاضر', '15', '2', 'ايطالي', 'اعزب', 'الاعاقة السمعية ', '  حديث وعلومه', '          hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh       ', '777777777', '2222222222', 'aaaaaaaa@ggggggg.vvv', '2014/10/15:02:41:59pm', 0),
+(654889, 88443300, 'gggggggggggg', '0', '', '0', 'اختر القسم', '0', '0', '', '0', '                 ', '', '', '', '2014/10/24:01:20:45pm', 0),
+(994455321, 7788666, 'vvvvvvvvv', '1', 'ذكر', '5', 'الكيمياء الصيدلية', 'قطري', 'اعزب', 'المختبرات الطبية', '  دراسات قرآنية\r\n', '                                                         لللللللللللللللللللللللللللل                                                                                                                                                        ', '77777777777', '888888888888', '', '2014/10/27:10:38:44am', 1),
+(77788, 8888888, '7pppppppp', '0', '', '0', 'اختر القسم', '0', '0', '', '0', '                 ', '', '', '', '2014/10/24:01:23:47pm', 0),
+(111111, 2222222, 'لللللللل', '0', '', '0', 'اختر القسم', '0', '0', '', '0', '                 ', '', '', '', '2014/10/24:01:25:26pm', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `data_author`
+--
+ALTER TABLE `data_author`
+ ADD PRIMARY KEY (`AuthorID`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
