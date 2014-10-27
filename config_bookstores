@@ -1,7 +1,7 @@
 <?PHP
 define('dbhost','localhost'); 
 define('dbname','bookstores');    
-define('dbpw','amr981983'); 
+define('dbpw',''); 
 define('dbuname','root');
 define('$conn','0');
           
